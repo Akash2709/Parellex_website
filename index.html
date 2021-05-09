@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parallax Scrolling Website | Vanilla Javascript</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Alex Atom</a>
+            <ul>
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">WORK</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.jpg" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="mountains_behind">
+            <h2 id="text">Moon Light</h2>
+            <img src="mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Parallax Scrolling Effects</h2>
+                <p>According to the Oxford English Dictionary, hello is an alteration of hallo,
+                hollo,[1] which came from Old High German "halâ, holâ, emphatic imperative of 
+                halôn, holôn to fetch, used especially in hailing a ferryman".[5] 
+                It also connects the development of hello to the influence of an earlier form,
+                holla, whose origin is in the French holà (roughly, 'whoa there!', 
+                from French là 'there').[6] As in addition to hello, halloo,[7] 
+                hallo, hollo, hullo and (rarely) hillo also exist as variants or related words,
+                the word can be spelt using any of all five vowels.According to the Oxford English Dictionary, hello is an alteration of hallo, hollo,[1] which came from Old High German "halâ, holâ, emphatic imperative of halôn, holôn to fetch, used especially in hailing a ferryman".[5] It also connects the development of hello to the influence of an earlier form, holla, whose origin is in the French holà (roughly, 'whoa there!', from French là 'there').[6] As in addition to hello, halloo,[7] hallo, hollo, hullo and (rarely) hillo also exist as variants or related words,
+                the word can be spelt using any of all five vowels.<br><br>According to the Oxford English Dictionary, hello is an alteration of hallo,
+                hollo,[1] which came from Old High German "halâ, holâ, emphatic imperative of 
+                halôn, holôn to fetch, used especially in hailing a ferryman".[5] 
+                It also connects the development of hello to the influence of an earlier form,
+                holla, whose origin is in the French holà (roughly, 'whoa there!', 
+                from French là 'there').[6] As in addition to hello, halloo,[7] 
+                hallo, hollo, hullo and (rarely) hillo also exist as variants or related words,
+                the word can be spelt using any of all five vowels.According to the Oxford English Dictionary, hello is an alteration of hallo, hollo,[1] which came from Old High German "halâ, holâ, emphatic imperative of halôn, holôn to fetch, used especially in hailing a ferryman".[5] It also connects the development of hello to the influence of an earlier form, holla, whose origin is in the French holà (roughly, 'whoa there!', from French là 'there').[6] As in addition to hello, halloo,[7] hallo, hollo, hullo and (rarely) hillo also exist as variants or related words,
+                 the word can be spelt using any of all five vowels.<br><br>According to the Oxford English Dictionary, hello is an alteration of hallo,
+                 hollo,[1] which came from Old High German "halâ, holâ, emphatic imperative of 
+                 halôn, holôn to fetch, used especially in hailing a ferryman".[5] 
+                 It also connects the development of hello to the influence of an earlier form,
+                 holla, whose origin is in the French holà (roughly, 'whoa there!', 
+                 from French là 'there').[6] As in addition to hello, halloo,[7] 
+                 hallo, hollo, hullo and (rarely) hillo also exist as variants or related words,
+                 the word can be spelt using any of all five vowels.According to the Oxford English Dictionary, hello is an alteration of hallo, hollo,[1] which came from Old High German "halâ, holâ, emphatic imperative of halôn, holôn to fetch, used especially in hailing a ferryman".[5] It also connects the development of hello to the influence of an earlier form, holla, whose origin is in the French holà (roughly, 'whoa there!', from French là 'there').[6] As in addition to hello, halloo,[7] hallo, hollo, hullo and (rarely) hillo also exist as variants or related words,
+                 the word can be spelt using any of all five vowels.<br><br>According to the Oxford English Dictionary, hello is an alteration of hallo,
+                 hollo,[1] which came from Old High German "halâ, holâ, emphatic imperative of 
+                 halôn, holôn to fetch, used especially in hailing a ferryman".[5] 
+                 It also connects the development of hello to the influence of an earlier form,
+                 holla, whose origin is in the French holà (roughly, 'whoa there!', 
+                 from French là 'there').[6] As in addition to hello, halloo,[7] 
+                 hallo, hollo, hullo and (rarely) hillo also exist as variants or related words,
+                 the word can be spelt using any of all five vowels.According to the Oxford English Dictionary, hello is an alteration of hallo, hollo,[1] which came from Old High German "halâ, holâ, emphatic imperative of halôn, holôn to fetch, used especially in hailing a ferryman".[5] It also connects the development of hello to the influence of an earlier form, holla, whose origin is in the French holà (roughly, 'whoa there!', from French là 'there').[6] As in addition to hello, halloo,[7] hallo, hollo, hullo and (rarely) hillo also exist as variants or related words,
+                 the word can be spelt using any of all five vowels.<br><br></p>
+        </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header')
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.25 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            });
+        </script>
+    </body>
+</html>
